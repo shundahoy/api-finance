@@ -1,6 +1,7 @@
 <?php
 
 use App\Http\Controllers\AuthController;
+use App\Http\Controllers\CategoryController;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 
@@ -26,4 +27,5 @@ Route::middleware('auth:sanctum')->group(function () {
     Route::post('/logout', [AuthController::class, 'logout']);
     Route::put('/users/info', [AuthController::class, 'updateInfo']);
     Route::put('/users/password', [AuthController::class, 'updatePassword']);
+    Route::resource('/category', CategoryController::class);
 });

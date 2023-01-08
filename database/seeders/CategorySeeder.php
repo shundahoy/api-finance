@@ -18,32 +18,32 @@ class CategorySeeder extends Seeder
         Category::create([
             'name' => '給料',
             'color' => '#E85A70',
-            'color' => true,
+            'is_income' => true,
         ]);
         Category::create([
             'name' => '不労所得',
             'color' => '#4EA1D5',
-            'color' => true,
+            'is_income' => true,
         ]);
         Category::create([
             'name' => '臨時収入',
             'color' => '#45455',
-            'color' => true,
+            'is_income' => true,
         ]);
         Category::create([
             'name' => '食費',
             'color' => '#E85A70',
-            'color' => false,
+            'is_income' => false,
         ]);
         Category::create([
             'name' => '日用日',
             'color' => '#4EA1D5',
-            'color' => false,
+            'is_income' => false,
         ]);
         Category::create([
             'name' => '交通費',
             'color' => '#45455',
-            'color' => false,
+            'is_income' => false,
         ]);
     }
 }
